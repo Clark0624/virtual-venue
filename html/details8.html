@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue - Home</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/hmtl/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-details">
+            <a href="/html/movie-details.html"></a>
+        </div>
+
+        <div class="detail">
+            <img src="/image/thefault.jpg" alt="The Fault in our stars" class="small-image">
+            
+        <div class="Paragraph">
+            <p> The Fault in Our Stars* is a young adult novel by John Green that tells the story of Hazel Grace Lancaster, a sixteen-year-old cancer patient.
+                 Hazel is forced to attend a support group where she meets Augustus Waters, a charming cancer survivor. 
+                 </p>
+            <p> Hazel and Augustus quickly form a bond and embark on a whirlwind romance. They travel to Amsterdam to meet the author of a book that has deeply affected Hazel, and they face the realities of their illnesses together. 
+                
+                The novel explores themes of love, loss, and the search for meaning in the face of mortality. It is a poignant and moving story that has resonated with readers of all ages.</p><br/>
+            <div class="over">
+                <p> Country: United States of America </p> <br/>
+                <p> Genre: Drama, Romance</p> <br/>   
+                <p> Released date: june 6, 2014</p></br>
+                <p> Production: Fox 2000 Pictures, Temple Hill Entertainment</p><br/>
+                <div class="Star">
+                    <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                    <p> 9.9/10</p>
+                </div>
+            </div>
+                <button class="button" onclick="document.getElementById('trailer').scrollIntoView();">Watch Trailer</button>
+                <button class="button" onclick="window.location.href='booking.html';">Buy Ticket</button>
+                <button class="button" onclick="document.getElementById('comment').scrollIntoView();">Comment</button>
+        </div>
+    </div>
+        <h1>Cast</h1>
+    </div>
+        <section class="characters">
+            <div class="movie-slot">
+                <img src="/image/Willem.jpg" alt="Willem">
+                <p>Willem Dafoe .</p>
+                <p class="small-white">Peter van  Houten</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Lotte.jpg" alt="Lotte Verbeek">
+                <p>Lotte Verbeek</p>
+                <p>Lidewij</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Ana.jpg" alt="Ana">
+                <p>Ana Dela Cruz .</p>
+                <p>Dr. maria</p>
+            </div>
+            <div class="movie-slot">
+                <img src="/image/Randy.jpg" alt="Randy">
+                <p>Randy Kovitz.</p>
+                <p>Dr. simmons</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/david.jpg" alt="david">
+                <p>David Whalen.</p>
+                <p>Gus' dad </p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Milica.jpg" alt="Milica">
+                <p>Milica Govich.</p>
+                <p>Gus' Mom </p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Allegra.jpg" alt="Allegra">
+                <p>Allegra Carpenter.</p>
+                <p>Hostess</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Emily.jpg" alt="Emily">
+                <p>Emily Peachey.</p>
+                <p>Monica</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Mike.jpg" alt="Mike">
+                <p>Mike Birbiglia.</p>
+                <p>Patrick</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Carly.jpg" alt="Carly">
+                <p>Carly Otte.</p>
+                <p>Young Girl(alisa)</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Silvio.jpg" alt="Silvio">
+                <p>Silvio Wolf.</p>
+                <p>European</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Carole.jpg" alt="Carole">
+                <p>Carole Weyers.</p>
+                <p>Anne Frank</p>
+            </div>
+        </section> 
+        <h1>Trailer</h1>
+        <div class="trailer" id="trailer">
+            <iframe width="1141" height="500" src="https://www.youtube.com/embed/9ItBvH5J6ss" frameborder="0" allowfullscreen></iframe>
+        </div>
+       <div class="Comments">
+        <h1>Comments</h1>
+        <input type="text" id="comment" name="comment" placeholder="Add a comment">
+        <input type="button" value="Post">
+        <button type="number">1,230 comments</button>
+        <div class="Feedback">
+            <p>Eric: My friends and i enjoy this movie so much!</p>
+            <p>Carl: This is the best Romance/Drama movie for me</p>
+            <p>Kurt: I love the movie but i widh it was longer</p>
+            <p>Luis: This is so cool!</p>
+            <p>Darren: Damn, this movie is so good!</p>
+        </div>
+       </div>
+        
+    </header>
+</body>
+</html>

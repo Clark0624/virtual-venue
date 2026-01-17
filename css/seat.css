@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', 'sans-serif';
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.place-container {
+  margin: 20px 0;
+  padding: 15px; /* Add padding for better spacing */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  width: 300px; /* Set a fixed width */
+  text-align: center; /* Center the text */
+}
+
+.place-container label {
+  font-size: 20px; /* Increase font size for the label */
+  color: #ffd900; /* Match the theme color */
+  display: block; /* Make label a block element */
+  margin-bottom: 10px; /* Space between label and select */
+}
+
+.place-container select {
+  background-color: #fff; /* White background for the select */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Increase font size for better readability */
+  padding: 10px; /* Add padding for better spacing */
+  width: 100%; /* Make the select fill the container */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.place-container select:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+.date-time-container {
+  margin-top: 20px; /* Space above the date-time container */
+  padding: 15px; /* Padding for better spacing */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  width: 300px; /* Set a fixed width */
+  text-align: center; /* Center the text */
+}
+
+.date-time-container label {
+  font-size: 18px; /* Font size for the label */
+  color: #ffd900; /* Match the theme color */
+  display: block; /* Make label a block element */
+  margin-bottom: 10px; /* Space between label and input */
+}
+
+.date-time-container select {
+  width: 100%; /* Make selects fill the container */
+  padding: 10px; /* Add padding for better spacing */
+  margin-bottom: 15px; /* Space between selects */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background for selects */
+}
+
+.movie-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-container select {
+  width: 100%; /* Make selects fill the container */
+  padding: 10px; /* Add padding for better spacing */
+  margin-bottom: 15px; /* Space between selects */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background for selects */
+}
+
+.movie-poster {
+    width: 100px; /* Set a fixed width for the poster */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.movie-price {
+    font-size: 16px;
+    color: green;
+}
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: yellow;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}
+
+.order {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ffd900;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.order:hover {
+    background-color: #ff9100;
+}

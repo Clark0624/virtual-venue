@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue - Home</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="notif.html">Notifications</a>
+                <a href="profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-details">
+            <a href="movie-details1.html"></a>
+        </div>
+
+        <div class="detail">
+            <img src="/image/cars3.jpg" alt="cars3" class="small-image">
+            
+        <div class="Paragraph">
+            <p>"Cars 3," Lightning McQueen, a seasoned champion, faces a new generation of high-tech racers who threaten to leave him in the dust. As he struggles to adapt to the changing landscape of motorsports, McQueen finds himself questioning his legacy and the meaning of his racing career.</p>
+            <p>With the help of his loyal friend Mater and a brilliant young race technician, McQueen embarks on a journey of self-discovery, pushing his limits and rediscovering his passion for the sport. Along the way, he learns valuable lessons about teamwork, perseverance, and the importance of embracing change.</p><br/>
+            <div class="over">
+                <p> Country: United States of America </p> <br/>
+                <p> Genre: Animation, Adventure, Comedy, Family and Sport</p> <br/>   
+                <p> Released date: July 16, 2017</p></br>
+                <p> Production: Pixar Animation Studios, Walt Disney Pictures</p><br/>
+                <div class="Star">
+                    <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                    <p> 9.9/10</p>
+                </div>
+            </div>
+                <button class="button" onclick="document.getElementById('trailer').scrollIntoView();">Watch Trailer</button>
+                <button class="button" onclick="window.location.href='booking.html';">Buy Ticket</button>
+                <button class="button" onclick="document.getElementById('comment').scrollIntoView();">Comment</button>
+        </div>
+    </div>
+        <h1>Cast</h1>
+    </div>
+        <section class="characters">
+            <div class="movie-slot">
+                <img src="/image/Owen.jpg" alt="Owen">
+                <p>Owen Willson.</p>
+                <p class="small-white">Lightning McQueen</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Cristela.jpg" alt="Cristela">
+                <p>Cristela Alonzo</p>
+                <p>Cruz Ramirez</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Larry.jpg" alt="Larry">
+                <p>Larry the cable guy .</p>
+                <p>Mater</p>
+            </div>
+            <div class="movie-slot">
+                <img src="/image/Nathan.jpg" alt="Nathan">
+                <p>Nathan Fillion.</p>
+                <p>Sterling</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Nathann.jpg" alt="Nathann">
+                <p>Nathan Cooper.</p>
+                <p>Smokey</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Armie.jpg" alt="Armie">
+                <p>Armie Hammer.</p>
+                <p>Jackson Storm</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Tony.jpg" alt="Tony">
+                <p>Tony Shalhoub.</p>
+                <p>Luigi</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Bonnie.jpg" alt="Bonnie">
+                <p>Bonnie Hunt.</p>
+                <p>Sally</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Lea.jpg" alt="Lea">
+                <p>Lea Delaria.</p>
+                <p>Miss Fritter</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Kerry.jpg" alt="Kerry">
+                <p>Kerry Washington.</p>
+                <p>Natalie Certain</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Bob.jpg" alt="Bob">
+                <p>Bob Costas.</p>
+                <p>Bob Cutlass</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Rusty.jpg" alt="Rusty">
+                <p>Tom Magliozzi.</p>
+                <p>Rusty</p>
+            </div>
+        </section> 
+        <h1>Trailer</h1>
+        <div class="trailer" id="trailer">
+            <iframe width="1141" height="500" src="https://www.youtube.com/embed/ZuaseSovWDY" frameborder="0" allowfullscreen></iframe>
+        </div>
+       <div class="Comments">
+        <h1>Comments</h1>
+        <input type="text" id="comment" name="comment" placeholder="Add a comment">
+        <input type="button" value="Post">
+        <button type="number">1,230 comments</button>
+        <div class="Feedback">
+            <p>Eric: My friends and i enjoy this movie so much!</p>
+            <p>Carl: This is the best Cars movie for me</p>
+            <p>Kurt: I love the movie but i widh it was longer</p>
+            <p>Luis: This is so cool!</p>
+            <p>Darren: Damn, this movie is so good!</p>
+        </div>
+       </div>
+        
+    </header>
+</body>
+</html>

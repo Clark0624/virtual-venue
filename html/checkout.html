@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Movie Booking</title>
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <script src="/javascript/checkout.js"></script>
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenueLogo.webp" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="profile.html" class="profile">
+                    <img src="/image/user-icon.png" alt="User Profile">
+                </a>
+            </div>
+    </header>
+    
+    <div class="checkout-container">
+        <h1>Checkout Summary</h1>
+        <div class="summary">
+            <!-- Movie Details Section -->
+            <div id="movie-details">
+                <p>Movie: <span id="movie-name"></span></p>
+                <p>Date: <span id="movie-date"></span></p>
+                <p>Time: <span id="movie-time"></span></p>
+                <p>Venue: <span id="movie-venue"></span></p>
+            </div>
+      
+            <h3>Seats</h3>
+            <p>You have selected <span id="seat-count">0</span> seats</p>
+            <p>Total for seats: <span id="seat-total">0.00</span></p>
+      
+            <h3>Food & Drinks (if any)</h3>
+            <div id="food-summary">No food selected</div>
+            <p>Total for food: <span id="food-total">0.00</span></p>
+      
+            <h3>Total Amount</h3>
+            <p>Total: <span id="total-price">0.00</span></p>
+        </div>
+      
+        <div class="checkout-actions">
+            <button id="confirm-order" class="button">Confirm Order</button>
+            <button id="cancel-order" class="button">Cancel</button>
+        </div>
+    </div>
+
+    <script src="/javascript/checkout.js"></script>
+  </body>
+</html>

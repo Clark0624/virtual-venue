@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/seat.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <!-- Cinema Venue Selection -->
+    <div class="place-container">
+      <label for="place">Pick Cinema Venue</label>
+      <select id="place">
+        <option>Gateway Mall - Quezon City</option>
+        <option>Gateway Mall 2 - Quezon City</option>
+        <option>Ali Mall Cineplex - Quezon City</option>
+        <option>Robinson Movie World Magnolia - Quezon City</option>
+        <option>Eastwood Cinemas - Quezon City</option>
+        <option>Cinema '76 Morato - Quezon City</option>
+        <option>Gateway Cineplex 18 - Quezon City</option>
+        <option>Opus Mall Cinema - Quezon City</option>
+        <option>Ayala Malls Cinemas U.P. Town Center - Quezon City</option>
+        <option>Ayala Malls Cinemas TriNoma - Quezon City</option>
+        <option>New Farmers Plaza Cinema - Quezon City</option>
+        <option>Fishermall VIP Cinema - Quezon City</option>
+        <option>SM North Edsa IMAX Theather - Quezon City</option>
+        <option>Greenhills Promenade Cinema - Quezon City</option>
+        <option>UPFI Film Center - Quezon City</option>
+      </select>
+    </div>
+
+    <!-- Date and Time Selection -->
+    <div class="date-time-container">
+      <label for="date">Select Date:</label>
+      <select id="movie-date" name="date" required>
+        <option value="2024-10-01">October 1, 2024</option> 
+        <option value="2024-10-02">October 2, 2024</option>
+        <option value="2024-10-03">October 3, 2024</option>
+        <option value="2024-10-04">October 4, 2024</option>
+        <option value="2024-10-05">October 5, 2024</option>
+      </select>
+
+      <label for="time">Select Time:</label>
+      <select id="movie-time" name="time" required>
+        <option value="10:00">10:00 AM</option>
+        <option value="1:00">1:00 PM</option>
+        <option value="4:00">4:00 PM</option>
+        <option value="7:00">7:00 PM</option>
+        <option value="9:00">9:00 PM</option>
+      </select>
+    </div>
+
+    <!-- Movie Selection -->
+    <div class="movie-container">
+      <label for="movie">Select Movie:</label>
+      <select id="movie">
+        <option value="499">Avengers: Endgame (499)</option>
+        <option value="599">Terrifier 3 (599)</option>
+        <option value="549">Oppenheimer (549)</option>
+        <option value="699">Inside Out 2 (699)</option>
+        <option value="599">Deadpool & Wolverine (599)</option>
+        <option value="499">Hello, Love, Again (499)</option>
+        <option value="479">The Wild Robot (479)</option>
+        <option value="529">The Fault in Our Stars (529)</option>
+        <option value="599">How To Make Millions before Grandma Dies (599)</option>
+        <option value="699">Garfield (699)</option>
+      </select>
+    </div>
+
+    <!-- Seat Layout -->
+    <ul class="showcase">
+      <li><div class="seat"></div><small>N/A</small></li>
+      <li><div class="seat selected"></div><small>Selected</small></li>
+      <li><div class="seat occupied"></div><small>Occupied</small></li>
+    </ul>
+
+    <!-- Movie Seat Grid -->
+    <div class="container">
+      <div class="screen"></div>
+
+      <!-- Repeat these rows as necessary -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <!-- Seat Summary -->
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of <span id="total">0</span>
+    </p>
+
+    <!-- Proceed to Order -->
+    <div class="seat-buttons">
+      <a href="order.html" class="order" aria-label="Proceed to order">Next</a>
+    </div>
+    <script src="/javascript/seat.js"></script>
+  </body>
+</html>

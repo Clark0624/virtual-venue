@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue - Home</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-details">
+            <a href="movie-details1.html"></a>
+        </div>
+
+        <div class="detail">
+            <img src="/image/deadpool.jpg" alt="Deadpool" class="small-image">
+            
+        <div class="Paragraph">
+            <p> Deadpool, the wisecracking mercenary, and Wolverine, the gruff mutant, are forced to team up against a common enemy.</p>
+            <p> Their contrasting personalities and methods clash, creating a dynamic and humorous tension as they fight for survival.</p><br/>
+            <div class="over">
+                <p> Country: United states of america</p> <br/>
+                <p> Genre: Action · Adventure · Comedy · Sci-Fi</p> <br/>   
+                <p> Released date: July 26, 2024</p></br>
+                <p> Production: Marvel Studios · 20th Century Studios</p><br/>
+                <div class="Star">
+                    <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                    <p> 9.9/10</p>
+                </div>
+            </div>
+                <button class="button" onclick="document.getElementById('trailer').scrollIntoView();">Watch Trailer</button>
+                <button class="button" onclick="window.location.href='booking.html';">Buy Ticket</button>
+                <button class="button" onclick="document.getElementById('comment').scrollIntoView();">Comment</button>
+        </div>
+    </div>
+        <h1>Cast</h1>
+    </div>
+        <section class="characters">
+            <div class="movie-slot">
+                <img src="/image/Ryan.png" alt="Ryan">
+                <p>Ryan Reynolds.</p>
+                <p class="small-white">Wade Wilson</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Hugh.png" alt="Hugh">
+                <p>Hugh Jackman.</p>
+                <p>Logan</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Emma.png" alt="Emma">
+                <p>Emma Corrin.</p>
+                <p>Cassandra Nova</p>
+            </div>
+            <div class="movie-slot">
+                <img src="/image/Dafne.png" alt="Dafne">
+                <p>Dafne Keen.</p>
+                <p>Laura</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Jon.png" alt="Jon">
+                <p>Jon Favreau.</p>
+                <p>Happy Hogan</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Morena.png" alt="Morena">
+                <p>Morena Baccarin.</p>
+                <p>Vannessa</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Rob.png" alt="Rob">
+                <p>Rob Delaney .</p>
+                <p>Peter</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Jenniffer.png" alt="Jenniffer">
+                <p>Jennifer Garner.</p>
+                <p>Elektra </p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Wesley.png" alt="Wesley">
+                <p>Wesley Snipes.</p>
+                <p>Blade</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Channing.png" alt="Channing">
+                <p>Channing Tatum.</p>
+                <p>Gambit</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Chrris.png" alt="Chrris">
+                <p>Chris Evans.</p>
+                <p>Johny Storm</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Blake.png" alt="Blake">
+                <p>Blake Lively.</p>
+                <p>Lady Deadpool</p>
+            </div>
+        </section> 
+        <h1>Trailer</h1>
+        <div class="trailer" id="trailer">
+            <iframe width="1141" height="500" src="https://www.youtube.com/embed/73_1biulkYk" frameborder="0" allowfullscreen></iframe>
+        </div>
+       <div class="Comments">
+        <h1>Comments</h1>
+        <input type="text" id="comment" name="comment" placeholder="Add a comment">
+        <input type="button" value="Post">
+        <button type="number">1,230 comments</button>
+        <div class="Feedback">
+            <p>Eric: My friends and i enjoy this movie so much!</p>
+            <p>Carl: This is the best Deadpool movie for me</p>
+            <p>Kurt: I love the movie but i widh it was longer</p>
+            <p>Luis: This is so cool!</p>
+            <p>Darren: Damn, this movie is so good!</p>
+        </div>
+       </div>
+        
+    </header>
+</body>
+</html>

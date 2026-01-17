@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue - Home</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-details">
+            <a href="/html/movie-details1.html"></a>
+        </div>
+
+        <div class="detail">
+            <img src="/image/Insideout.jpg" alt="Insideout" class="small-image">
+            
+        <div class="Paragraph">
+            <p> "Two years after her move to San Francisco,13-year-old Riley Andersen is entering high school.</p>
+            <p>  Her personified emotions—Joy, Sadness, Fear, Disgust, and Anger—now oversee a newly formed element of Riley's mind called her "Sense of Self", which houses memories and feelings that shape Riley's beliefs. Joy, aiming to fill the Sense of Self with only positive memories, has created a mechanism that launches negative memories to the back of Riley's mind.</p><br/>
+            <div class="over">
+                <p> Country: United states of america</p> <br/>
+                <p> Genre: Animation · Adventure · Comedy · Drama · Family · Fantasy</p> <br/>   
+                <p> Released date: June 14, 2024</p></br>
+                <p> Production: Walt Disney Pictures · Pixar Animation Studios</p><br/>
+                <div class="Star">
+                    <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                    <p> 9.9/10</p>
+                </div>
+            </div>
+                <button class="button" onclick="document.getElementById('trailer').scrollIntoView();">Watch Trailer</button>
+                <button class="button" onclick="window.location.href='booking.html';">Buy Ticket</button>
+                <button class="button" onclick="document.getElementById('comment').scrollIntoView();">Comment</button>
+        </div>
+    </div>
+        <h1>Cast</h1>
+    </div>
+        <section class="characters">
+            <div class="movie-slot">
+                <img src="/image/Amy.png" alt="Amy">
+                <p>Amy Poehler.</p>
+                <p class="small-white">Joy</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Maya.png" alt="Maya">
+                <p>Maya Hawke.</p>
+                <p>Anxiety</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Kensington.png" alt="Kensington">
+                <p>Kensington Tallman.</p>
+                <p>Riley</p>
+            </div>
+            <div class="movie-slot">
+                <img src="/image/Liza.png" alt="Liza">
+                <p>Liza Lapira.</p>
+                <p>Disgust</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Tonny.png" alt="Tonny">
+                <p>Tony Hale.</p>
+                <p>Fear</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Lewis.png" alt="Lewis">
+                <p>Lewis Black.</p>
+                <p>Anger</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Phyllis.png" alt="Phyllis">
+                <p>Phyllis Smith.</p>
+                <p>Sadnnes</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Ayo.png" alt="Ayo">
+                <p>Ayo Edebiri.</p>
+                <p>Envy</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Lilimar.png" alt="Lilimar">
+                <p>Lilimar Hernandez.</p>
+                <p>Valentina</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Grace.png" alt="Grace">
+                <p>Grace Lu.</p>
+                <p>Grace</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Sumayyah.png" alt="Sumayyah">
+                <p>Sumayyah Nuriddin.</p>
+                <p>Bree</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/paul.png" alt="paul">
+                <p>Paul Walter Hauser.</p>
+                <p>Embarrasment</p>
+            </div>
+        </section> 
+        <h1>Trailer</h1>
+        <div class="trailer" id="trailer">
+            <iframe width="1141" height="500" src="https://www.youtube.com/embed/LEjhY15eCx0" frameborder="0" allowfullscreen></iframe>
+        </div>
+       <div class="Comments">
+        <h1>Comments</h1>
+        <input type="text" id="comment" name="comment" placeholder="Add a comment">
+        <input type="button" value="Post">
+        <button type="number">1,230 comments</button>
+        <div class="Feedback">
+            <p>Eric: My friends and i enjoy this movie so much!</p>
+            <p>Carl: This is the best Insideout movie for me</p>
+            <p>Kurt: I love the movie but i widh it was longer</p>
+            <p>Luis: This is so cool!</p>
+            <p>Darren: Damn, this movie is so good!</p>
+        </div>
+       </div>
+        
+    </header>
+</body>
+</html>

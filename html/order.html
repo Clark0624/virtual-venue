@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue</title>
+    <link rel="stylesheet" href="/css/oder.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenueLogo.webp" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                    <img src="/image/user-icon.png" alt="User Profile">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3 class="glowing-heading">Combos</h3>
+            <div class="content">
+                <div class="combos">
+                    <div class="food-order">
+                        <nav class="pre-order-food">
+                            <h3>Pre Order Food (Optional)</h3>
+                            <ul>
+                                <li><a href="/html/order6.html">Combos</a></li>
+                                <li><a href="/html/order2.html">Snacks</a></li>
+                                <li><a href="/html/order3.html">Beverages</a></li>
+                                <li><a href="/html/order4.html">Popcorns</a></li>
+                                <li><a href="/html/order5.html">Sandwiches</a></li>
+                            </ul>
+                        </nav>
+                        <div class="combos">
+                            <div class="combo-item" data-price="250.25">
+                                <img src="/image/cara.avif" alt="Combo 1 Image">
+                                <div class="combo-details">
+                                    <p><b>Combo 1 (Salted)</b></p>
+                                    <p>Salted Popcorn 50g + Pepsi 450ml (597 Kcal)</p>
+                                    <p class="price">₱250.25</p>
+                                </div>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('combo1')">-</button>
+                                    <input type="text" id="combo1-quantity" value="0" readonly>
+                                    <button class="quantity-btn" onclick="increaseQuantity('combo1')">+</button>
+                                </div>
+                            </div>
+                            <div class="combo-item" data-price="399.05">
+                                <img src="/image/wow.webp" alt="Combo 2 Image">
+                                <div class="combo-details">
+                                    <p><b>Combo 2 (Salted)</b></p>
+                                    <p>Salted Popcorn 100g + Pepsi 350ml (1159 Kcal)</p>
+                                    <p class="price">₱399.05</p>
+                                </div>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('combo2')">-</button>
+                                    <input type="text" id="combo2-quantity" value="0" readonly>
+                                    <button class="quantity-btn" onclick="increaseQuantity('combo2')">+</button>
+                                </div>
+                            </div>
+                            <div class="combo-item" data-price="279.85">
+                                <img src="/image/nachos.jpg" alt="Nachos Combo Image">
+                                <div class="combo-details">
+                                    <p><b>Nachos Combo</b></p>
+                                    <p>Nachos with Cheese & Salsa 30g + Pepsi 350ml (798 Kcal)</p>
+                                    <p class="price">₱279.85</p>
+                                </div>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('nachos1')">-</button>
+                                    <input type="text" id="nachos1-quantity" value="0" readonly>
+                                    <button class="quantity-btn" onclick="increaseQuantity('nachos1')">+</button>
+                                </div>
+                            </div>
+                            <div class="combo-item" data-price="248.85">
+                                <img src="/image/Popsarap.jpg" alt="Popcorn & Milkshake">
+                                <div class="combo-details">
+                                    <p><b>Popcorn & Milkshake Combo</b></p>
+                                    <p>Popcorn and one Chocolate Milkshake (798 Kcal)</p>
+                                    <p class="price">248.85</p>
+                                </div>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" onclick="decreaseQuantity('milkshake')">-</button>
+                                    <input type="text" id="milkshake-quantity" value="0" readonly>
+                                    <button class="quantity-btn" onclick="increaseQuantity('milkshake')">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Price Display -->
+            <h3 id="total-price">Total: ₱0.00</h3>
+            <!-- Proceed to Checkout Button -->
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            <div>
+                <button class="skip-button" onclick="handleSkipButtonClick()">Skip</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/javascript/order.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

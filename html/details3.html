@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue - Home</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-details">
+            <a href="/html/movie-details1.html"></a>
+        </div>
+
+        <div class="detail">
+            <img src="/image/opennheimer.jpg" alt="Oppenheimer" class="small-image">
+            
+        <div class="Paragraph">
+            <p> "Oppenheimer" follows J. Robert Oppenheimer, the physicist who led the Manhattan Project to develop the atomic bomb during World War II. The film explores the scientific and personal complexities of his life, from his early genius to his leadership of the project, the Trinity Test, and the ethical dilemmas he faced.</p>
+            <p>  It depicts the intense pressure, secrecy, and moral quandaries of the project, as well as the political fallout and the profound impact of the atomic bomb on the world.</p><br/>
+            <div class="over">
+                <p> Country: United states of america</p> <br/>
+                <p> Genre: Biography, Drama, History</p> <br/>   
+                <p> Released date: July 21, 2023</p></br>
+                <p> Production: BBC, Boston's WGBH</p><br/>
+                <div class="Star">
+                    <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                    <p> 9.9/10</p>
+                </div>
+            </div>
+                <button class="button" onclick="document.getElementById('trailer').scrollIntoView();">Watch Trailer</button>
+                <button class="button" onclick="window.location.href='booking.html';">Buy Ticket</button>
+                <button class="button" onclick="document.getElementById('comment').scrollIntoView();">Comment</button>
+        </div>
+    </div>
+        <h1>Cast</h1>
+    </div>
+        <section class="characters">
+            <div class="movie-slot">
+                <img src="/image/jrobert.png" alt="J. Robert">
+                <p>Cillian Murphy.</p>
+                <p class="small-white">J. Robert</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/kitty.png" alt="kitty">
+                <p>Emily Blunt.</p>
+                <p>kitty</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/RDJ.png" alt="RDJ">
+                <p>Robert Downey Jr.</p>
+                <p>Lewis Strauss</p>
+            </div>
+            <div class="movie-slot">
+                <img src="/image/Alden.png" alt="Alden">
+                <p>Alden Ehrenreich.</p>
+                <p>Senate Aide</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Scott.png" alt="Scott">
+                <p>Scott Grimes.</p>
+                <p>Councel</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Jason.png" alt="Jason">
+                <p>Jason Clarke.</p>
+                <p>Roger Robb</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/kurt.png" alt="Kurt">
+                <p>Kurt Koehler.</p>
+                <p>Thomas Morgan</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Tony.png" alt="Tony">
+                <p>Tony Goldwyn.</p>
+                <p>Gordon Grey</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/John.png" alt="John">
+                <p>John Gowans.</p>
+                <p>Ward Evans</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Macon.png" alt="Macon">
+                <p>Macon Blair.</p>
+                <p>Lloyd Garrison</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/James.png" alt="James">
+                <p>James D'Arcy.</p>
+                <p>Patrick Blackett</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Kenneth.png" alt="Santa">
+                <p>Kenneth Bohr.</p>
+                <p>Niels Bohr</p>
+            </div>
+        </section> 
+        <h1>Trailer</h1>
+        <div class="trailer" id="trailer">
+            <iframe width="1141" height="500" src="https://www.youtube.com/embed/uYPbbksJxIg" frameborder="0" allowfullscreen></iframe>
+        </div>
+       <div class="Comments">
+        <h1>Comments</h1>
+        <input type="text" id="comment" name="comment" placeholder="Add a comment">
+        <input type="button" value="Post">
+        <button type="number">1,230 comments</button>
+        <div class="Feedback">
+            <p>Eric: My friends and i enjoy this movie so much!</p>
+            <p>Carl: This is the best  movie for me</p>
+            <p>Kurt: I love the movie but i widh it was longer</p>
+            <p>Luis: This is so cool!</p>
+            <p>Darren: Damn, this movie is so good!</p>
+        </div>
+       </div>
+        
+    </header>
+</body>
+</html>

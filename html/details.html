@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue - Home</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-details">
+            <a href="movie-details1.html"></a>
+        </div>
+
+        <div class="detail">
+            <img src="/image/AvengersEndgame.jpg" alt="Avengers Endgame" class="small-image">
+            
+            <div class="Container">
+              <div class="Paragraph">
+                  <p> After the devastating events of Avengers: Infinity War (2018), the universe is in ruins.</p>
+                  <p> With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p><br/>
+                  <div class="over">
+                      <p> Country: United states of america</p> <br/>
+                      <p> Genre: Action, Adventure, Drama, Sci-Fi</p> <br/>   
+                      <p> Released date: April 26, 2019</p></br>
+                      <p> Production: Marvel studios</p><br/>
+                    <div class="Star">
+                        <ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                <p> 9.9/10</p>
+                    </div>
+                      <button class="button" onclick="document.getElementById('trailer').scrollIntoView();">Watch Trailer</button>
+                      <button class="button" onclick="window.location.href='booking.html';">Buy Ticket</button>
+                      <button class="button" onclick="document.getElementById('comment').scrollIntoView();">Comment</button>
+                  </div>
+        </div>
+        </div>
+    </div>
+      </div>
+        <h1>Cast</h1>
+    </div>
+        <section class="characters">
+            <div class="movie-slot">
+                <img src="/image/ironman.png" alt="Iron Man">
+                <p>Robert Downey Jr.</p>
+                <p class="small-white">Iron Man</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Thor.png" alt="Thor">
+                <p>Chris Hemsworth.</p>
+                <p>Thor</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/steve.png" alt="Captain America">
+                <p>Chris Evans.</p>
+                <p>Captain America</p>
+            </div>
+            <div class="movie-slot">
+                <img src="/image/Hulk.png" alt="Hulk">
+                <p>Mark Ruffalo.</p>
+                <p>Hulk</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Spiderman.png" alt="Spider-Man">
+                <p>Tom Holland.</p>
+                <p>Spider-Man</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Blackk-widow.png" alt="Black Widow">
+                <p>Scarlett Johansson.</p>
+                <p>Black Widow</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/hawkeye.png" alt="Hawkeye">
+                <p>Jeremy Renner.</p>
+                <p>Hawkeye</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/thanos.png" alt="Thanos">
+                <p>Josh Brolin.</p>
+                <p>Thanos</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/panther.png" alt="Black Panther">
+                <p>Chadwick Boseman.</p>
+                <p>Black Panther</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/wanda.jpg" alt="Wanda">
+                <p>Elizabeth Olsen.</p>
+                <p>Wanda</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/loki.png" alt="Loki">
+                <p>Tom Hiddleston.</p>
+                <p>Loki</p>
+            </div>
+
+            <div class="movie-slot">
+                <img src="/image/Bucky.png" alt="Bucky">
+                <p>Sebastian Stan.</p>
+                <p>Bucky</p>
+            </div>
+        </section> 
+        <h1>Trailer</h1>
+        <div class="trailer" id="trailer">
+            <iframe width="1141" height="500" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allowfullscreen></iframe>
+        </div>
+       <div class="Comments">
+        <h1>Comments</h1>
+        <input type="text" id="comment" name="comment" placeholder="Add a comment">
+        <input type="button" value="Post">
+        <button type="number">1,230 comments</button>
+        <div class="Feedback">
+            <p>Denise: My friends and i enjoy this movie so much!</p>
+            <p>Steve: This is the best avengers movie for me</p>
+            <p>Joy: I love the movie but i wish it was longer</p>
+            <p>Marco: Iron man is so cool!</p>
+            <p>Alexander: Damn, this movie is so good!</p>
+        </div>
+       </div>
+        
+    </header>
+</body>
+</html>

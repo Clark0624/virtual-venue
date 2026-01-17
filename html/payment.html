@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/payment.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'ticket.html';
+        });
+    });
+</script>
+<script src="payment.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenuePng.png" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                <img src="/image/user-icon.png" alt="User  Profile">
+                </a>
+            </div>
+        </div>
+    <div class="Container">
+        <form action="">
+            <h1>PAYMENT</h1>
+            <div class="row">
+                <div class="column">
+                    <h3>BILLING ADDRESS</h3>
+                    <div class="input-box">
+                        <Span>Full Name: </Span>
+                        <input type="text" placeholder="Marco">
+                    </div>
+                    <div class="input-box">
+                        <Span>Email: </Span>
+                        <input type="email" placeholder="Marco@gmail.com">
+                    </div>
+                    <div class="input-box">
+                        <Span>Address: </Span>
+                        <input type="text" placeholder="Street-Locality">
+                    </div>
+                    <div class="input-box">
+                        <Span>City: </Span>
+                        <input type="text" placeholder="Quezon City">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Zip-Code</span>
+                            <input type="text" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3>PAYMENT</h3>
+                    <div class="input-box">
+                        <Span>Credit Cards Accepted: G-Cash, PayMaya, Paypal </Span>
+                        <ion-icon name="card"></ion-icon><ion-icon name="card"></ion-icon><ion-icon name="card"></ion-icon>
+                        <input type="text" placeholder="Marco">
+                    </div>
+                    <div class="input-box">
+                        <Span>Name On Card: </Span>
+                        <input type="text" placeholder="Mr.Marco">
+                    </div>
+                    <div class="input-box">
+                        <Span>Exp.Month: </Span>
+                        <input type="text" placeholder="August">
+                    </div>
+                    <div class="input-box">
+                        <Span>Exp.Year: </Span>
+                        <input type="Number" placeholder="2028">
+                    </div>
+                    <div class="input-box">
+                        <Span>CVC: </Span>
+                        <input type="number" placeholder="123">
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

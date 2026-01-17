@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nav .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+.nav input[type="text"] {
+    padding: 7px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+.user-icon {
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px 20px; 
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    background-color: #222;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+
+.poster {
+    text-align: center;
+    flex: 1;
+}
+
+.poster h2 {
+    color: #ffd700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.poster img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ffd700;
+}
+
+/* Food Order Section */
+.food-order {
+    flex: 2;
+}
+
+.food-order h3 {
+    color: #ffd700;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.food-categories {
+    margin-bottom: 15px;
+}
+
+.food-categories li {
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.food-categories li:hover {
+    color: #ffd700;
+}
+
+/* Combos Section */
+.combos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.combo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    gap: 15px;
+
+}
+
+.combo-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ffd700;
+}
+
+.combo-details {
+    flex: 1;
+}
+
+.combo-item p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.price {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+/* Skip Button */
+.skip {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ffd700;
+    color: #222;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skip:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster img {
+        width: 200px;
+    }
+
+    .combo-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skip {
+        bottom: 10px;
+        right: 10px;
+    }
+}

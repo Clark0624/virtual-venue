@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Venue</title>
+    <link rel="stylesheet" href="/css/oder.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/VirtualVenueLogo.webp" alt="Virtual Venue Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies" id="search">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="/html/home.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact Us</a>
+                <a href="/html/notif.html">Notifications</a>
+                <a href="/html/profile.html" class="profile">
+                    <img src="/image/user-icon.png" alt="User Profile">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3 class="glowing-heading">Beverages</h3>
+            <div class="content">
+                <div class="combos">
+                    <div class="food-order">
+                        <nav class="pre-order-food">
+                            <h3>Pre Order Food (Optional)</h3>
+                            <ul>
+                                <li><a href="/html/order6.html">Combos</a></li>
+                                <li><a href="/html/order2.html">Snacks</a></li>
+                                <li><a href="/html/order3.html">Beverages</a></li>
+                                <li><a href="/html/order4.html">Popcorns</a></li>
+                                <li><a href="/html/order5.html">Sandwiches</a></li>
+                            </ul>
+                        </nav>
+                        <div class="combo-item" data-price="250">
+                            <img src="/image/tea.jpg" alt="Chips">
+                            <div>
+                                <h4>Chips</h4>
+                                <p class="price">₱250</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="quantity-btn" onclick="decreaseQuantity('chips')">-</button>
+                                <input type="text" id="chips-quantity" value="0" readonly>
+                                <button class="quantity-btn" onclick="increaseQuantity('chips')">+</button>
+                            </div>
+                        </div>
+
+                        <div class="combo-item" data-price="250">
+                            <img src="/image/coc.jpg" alt="Bottled Coke">
+                            <div>
+                                <h4>Bottled Coke</h4>
+                                <p class="price">₱250</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="quantity-btn" onclick="decreaseQuantity('bottledCoke')">-</button>
+                                <input type="text" id="bottledCoke-quantity" value="0" readonly>
+                                <button class="quantity-btn" onclick="increaseQuantity('bottledCoke')">+</button>
+                            </div>
+                        </div>
+
+                        <div class="combo-item" data-price="200">
+                            <img src="/image/coffee.jpg" alt="Coffee">
+                            <div>
+                                <h4>Coffee</h4>
+                                <p class="price">₱200</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="quantity-btn" onclick="decreaseQuantity('coffee')">-</button>
+                                <input type="text" id="coffee-quantity" value="0" readonly>
+                                <button class="quantity-btn" onclick="increaseQuantity('coffee')">+</button>
+                            </div>
+                        </div>
+
+                        <div class="combo-item" data-price="75">
+                            <img src="/image/juice.jpg" alt="Natural Fruit Juice">
+                            <div>
+                                <h4>Natural Fruit Juice</h4>
+                                <p class="price">₱75</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="quantity-btn" onclick="decreaseQuantity('juice')">-</button>
+                                <input type="text" id="juice-quantity" value="0" readonly>
+                                <button class="quantity-btn" onclick="increaseQuantity('juice')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Price Display -->
+            <h3 id="total-price">Total: ₱0.00</h3>
+            <!-- Proceed to Checkout Button -->
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            <div>
+                <button class="skip-button" onclick="handleSkipButtonClick()">Skip</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/javascript/order.js"></script>
+</body>
+</html>
