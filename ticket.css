@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px, 1px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    position: relative;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 220px;
+    background-color: #111;
+    color: #FFD700;
+    transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+.search-bar input:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #FFC000;
+    transform: translateX(4px);
+}
+
+/* Nav Links Styling */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC000;
+    transform: scale(1.1);
+    text-shadow: 0 0 12px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    letter-spacing: 2px;
+}
+
+/* Profile Icon */
+.nav-links .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-links .profile img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #FFD700;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    margin-top: -20px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    color: #fff; 
+    text-align: left;
+    padding: 40px;
+    background-size: cover;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 600px; /* Limit the width of the content */
+    z-index: 2;
+}
+
+.detail h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.detail{
+    padding-left: 2em;
+    
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    background-color: #ffd900;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #ff9100;
+    transform: translateY(-4px);
+}
+.ticket{
+    text-align: center;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+    margin-bottom: 30px;
+}
+h1{
+    text-align: center;
+}
